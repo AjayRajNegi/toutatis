@@ -123,6 +123,7 @@ def main():
     if infos["external_url"]:
         print("External url           : " + infos["external_url"])
     print("IGTV posts             : " + str(infos.get("total_igtv_videos", 0)))
+
     print("Biography              : " + (f"""\n{" " * 25}""").join(infos["biography"].split("\n")))
     print("Linked WhatsApp        : " + str(infos["is_whatsapp_linked"]))
     print("Memorial Account       : " + str(infos["is_memorialized"]))
